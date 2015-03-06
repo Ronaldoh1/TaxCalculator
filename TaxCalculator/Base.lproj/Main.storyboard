@@ -38,21 +38,34 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCalculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPx-UN-y9Y"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-Rh-0hs">
+                                <rect key="frame" x="186" y="416" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="MzQ-C1-0RX" secondAttribute="centerX" id="AXf-aN-MMe"/>
+                            <constraint firstItem="MzQ-C1-0RX" firstAttribute="top" secondItem="Ls2-Rh-0hs" secondAttribute="bottom" constant="28" id="Flh-PN-ZlV"/>
                             <constraint firstItem="MzQ-C1-0RX" firstAttribute="top" secondItem="kar-G8-aTj" secondAttribute="bottom" constant="82" id="NMx-84-hl4"/>
                             <constraint firstAttribute="centerX" secondItem="kar-G8-aTj" secondAttribute="centerX" id="Tyo-iU-HNR"/>
                             <constraint firstAttribute="centerY" secondItem="kar-G8-aTj" secondAttribute="centerY" id="b63-2I-SKe"/>
+                            <constraint firstAttribute="centerX" secondItem="Ls2-Rh-0hs" secondAttribute="centerX" id="bu2-7V-rhH"/>
                             <constraint firstItem="5aQ-AT-CmJ" firstAttribute="top" secondItem="MzQ-C1-0RX" secondAttribute="bottom" constant="47" id="jhs-5h-bwj"/>
                             <constraint firstAttribute="centerX" secondItem="5aQ-AT-CmJ" secondAttribute="centerX" id="nc5-OP-l7p"/>
+                            <constraint firstItem="Ls2-Rh-0hs" firstAttribute="top" secondItem="kar-G8-aTj" secondAttribute="bottom" constant="33" id="ocp-qL-rB3"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="priceTextField" destination="kar-G8-aTj" id="2XE-bp-lmL"/>
+                        <outlet property="resultLabel" destination="Ls2-Rh-0hs" id="IWa-LS-L3p"/>
                         <outlet property="segmentedControl" destination="MzQ-C1-0RX" id="aJp-BN-0MG"/>
                     </connections>
                 </viewController>
